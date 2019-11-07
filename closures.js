@@ -218,11 +218,10 @@ function secretNumber() {
 */
 
 function timeOutCounter() {
-  for (var i = 0; i <= 5; i++) {
-    let j = i;
-    return {
-    setTimeout: (function() { console.log(j)}, j * 1000)
+  for (let i = 0; i <= 5; i++) {
+    setTimeout(function() {
+      console.log(i);
+    }, i * 1000);
   }
-}
 }
 timeOutCounter();
